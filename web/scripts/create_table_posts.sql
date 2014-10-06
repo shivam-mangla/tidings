@@ -3,7 +3,7 @@
 
 CREATE TABLE  `dbms_project`.`posts` (
 `post_id` INT NOT NULL,
-`news_id` INT NOT NULL,
+`news_id` varchar(32) NOT NULL,
 `start_datetime` DATETIME,
 `end_datetime` DATETIME,
 `source_id` INT,

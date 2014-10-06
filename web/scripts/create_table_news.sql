@@ -2,7 +2,7 @@
 -- mysql dbms_project < create_table_news.sql
 
 CREATE TABLE  `dbms_project`.`news` (
-`news_id` INT NOT NULL,
+`news_id` varchar(32) NOT NULL,
 `headline` varchar(512),
 `source_link` varchar(512), 
 FOREIGN KEY (`news_id`) REFERENCES posts(`news_id`),
