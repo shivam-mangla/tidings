@@ -1,0 +1,17 @@
+Shell Commands
+--------------
+
+#To open MySQL
+mysql -u username -p
+
+#To import a sql file 
+mysql -u username -p db_name < file.sql
+
+#To make a backup of entire database
+mysqldump db_name > backup-file.sql
+
+#Loading a local file in MySQL 
+#It is a s a security hazard and is off by default
+mysql -u root --local-infile -p dbms_project < file.sql 
+
+
