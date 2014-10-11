@@ -3,3 +3,6 @@
 
 ALTER TABLE posts ADD INDEX news_id(news_id);
 -- Fast search by news_id attribute
+
+ALTER TABLE posts ADD_INDEX source_id(source_id);
+-- Fast search by source_id attribute
