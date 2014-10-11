@@ -1,0 +1,35 @@
+My SQL Commands
+---------------
+
+######################## Outside Any Database ################
+
+CREATE DATABASE db_name;
+
+SHOW DATABASES;
+
+CREATE TABLE db_name.table_name (
+attr_name1 attr_type1 NOT NULL,
+attr_name2 attr_type2,
+FOREIGN KEY attr_name REFERENCES table_name(attr_name),
+UNIQUE(attr_name1,...)
+);
+
+SHOW TABLES FROM db_name;
+
+USE db_name;
+
+###################### Inside Any Database ###################
+
+SHOW TABLES;
+
+CREATE TABLE table_name (
+attr_name1 attr_type1 NOT NULL,
+attr_name2 attr_type2,
+FOREIGN KEY attr_name REFERENCES table_name(attr_name),
+UNIQUE(attr_name1,...)
+);
+
+ALTER TABLE table_name ADD INDEX index_name(col_name);
+ALTER TABLE table_name DROP INDEX index_name;
+
+SHOW INDEX FROM table_name;
