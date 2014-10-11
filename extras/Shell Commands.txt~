@@ -14,7 +14,7 @@ mysql -u username -p db_name < file.sql
 mysqldump db_name > backup-file.sql
 
 #Loading a local file in MySQL 
-#It is a security hazard and option is off by default so we have to enable explicitly
+#It is a security hazard and is off by default so we have to enable explicitly
 mysql -u root --local-infile -p dbms_project < file.sql 
 
 
