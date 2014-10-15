@@ -1,5 +1,5 @@
 -- To run this type in terminal (from /path/to/tidings/web/scripts)
--- mysql -u root --local-infile -uroot -pandsoon -p dbms_project < import_news.sql 
+-- mysql -u root --local-infile -p dbms_project < import_news.sql 
 
 LOAD DATA LOCAL INFILE '../../news_raw_db.csv' 
 INTO TABLE `dbms_project`.`news`

@@ -1,5 +1,5 @@
 -- To run this type in terminal (from /path/to/tidings/web/scripts)
--- mysql dbms_project < create_table_posts.sql
+-- mysql -u root -p dbms_project < create_table_posts.sql
 
 CREATE TABLE  `dbms_project`.`posts` (
 `post_id` INT NOT NULL,
