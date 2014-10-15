@@ -7,5 +7,4 @@
 
 	mysql_connect($host, $user, $password) or die($connect_error);
 	mysql_select_db($database) or die($connect_error);
-	echo "Hello world. Connection Established.";	
 ?>
